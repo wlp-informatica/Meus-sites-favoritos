@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres da página -->
+    <meta charset="UTF-8">
+
+    <!-- Ajusta a visualização para computadores, tablets e celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título exibido na aba do navegador -->
+    <title>Meus sites favoritos</title>
+
+    <style>
+        /* Configurações gerais da página */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            padding: 38px 20px;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #123b63, #167d9a);
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin: 0;
+        }
+
+        main {
+            width: min(1100px, 92%);
+            margin: 35px auto;
+        }
+
+        /* Organiza os cinco sites em cartões responsivos */
+        .sites {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 22px;
+        }
+
+        .site {
+            padding: 24px 18px;
+            text-align: center;
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+        }
+
+        .site h2 {
+            min-height: 30px;
+            margin: 0 0 18px;
+            font-size: 1.2rem;
+        }
+
+        .site img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 18px;
+        }
+
+        .site a {
+            display: inline-block;
+            padding: 10px 16px;
+            color: white;
+            background: #167d9a;
+            border-radius: 7px;
+            text-decoration: none;
+        }
+
+        .site a:hover {
+            background: #123b63;
+            text-decoration: underline;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho e título principal da atividade -->
+    <header>
+        <h1>Meus sites favoritos: WASHINGTON LUIS PEREIRA</h1>
+        <p>Uma seleção de sites que utilizo para estudar, trabalhar e me divertir.</p>
+    </header>
+
+    <main>
+        <section class="sites">
+            <!-- Primeiro site favorito -->
+            <article class="site">
+                <h2>Google</h2>
+                <figure>
+                    <img src="https://www.google.com/s2/favicons?domain=google.com&sz=128"
+                         alt="Ícone do site Google">
+                    <figcaption>Pesquisa e informação</figcaption>
+                </figure>
+                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                    Acessar Google
+                </a>
+            </article>
+
+            <!-- Segundo site favorito -->
+            <article class="site">
+                <h2>YouTube</h2>
+                <figure>
+                    <img src="https://www.google.com/s2/favicons?domain=youtube.com&sz=128"
+                         alt="Ícone do site YouTube">
+                    <figcaption>Vídeos e aprendizagem</figcaption>
+                </figure>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                    Acessar YouTube
+                </a>
+            </article>
+
+            <!-- Terceiro site favorito -->
+            <article class="site">
+                <h2>GitHub</h2>
+                <figure>
+                    <img src="https://www.google.com/s2/favicons?domain=github.com&sz=128"
+                         alt="Ícone do site GitHub">
+                    <figcaption>Projetos e programação</figcaption>
+                </figure>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    Acessar GitHub
+                </a>
+            </article>
+
+            <!-- Quarto site favorito -->
+            <article class="site">
+                <h2>Spotify</h2>
+                <figure>
+                    <img src="https://www.google.com/s2/favicons?domain=spotify.com&sz=128"
+                         alt="Ícone do site Spotify">
+                    <figcaption>Músicas e podcasts</figcaption>
+                </figure>
+                <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">
+                    Acessar Spotify
+                </a>
+            </article>
+
+            <!-- Quinto site favorito -->
+            <article class="site">
+                <h2>ChatGPT</h2>
+                <figure>
+                    <img src="https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128"
+                         alt="Ícone do site ChatGPT">
+                    <figcaption>Estudos e produtividade</figcaption>
+                </figure>
+                <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">
+                    Acessar ChatGPT
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>Atividade de Desenvolvimento Web I - HTML5</p>
+    </footer>
+</body>
+</html>
